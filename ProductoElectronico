@@ -1,0 +1,21 @@
+package MainApp;
+
+/**
+ *
+ * @author luisr
+ */
+
+public class ProductoElectronico extends Producto {
+    private final int garantiaMeses;
+
+    public ProductoElectronico(String nombre, double precio, int cantidad, int garantiaMeses) {
+        super(nombre, precio, cantidad);
+        this.garantiaMeses = garantiaMeses;
+    }
+
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo();
+        System.out.println("Garantía: " + garantiaMeses + " meses");
+    }
+}
